@@ -9,4 +9,6 @@ build/
 *.zip
 *.tar.gz
 *.rar
-
+gradlew
+gradle/
+gradlew.*

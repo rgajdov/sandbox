@@ -1,12 +1,12 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class ArrayTest {
 
     private HelloWorld hw;
+    private CodeSignal cs;
 
     private int[][] array = {
             {1, 3, 2, 1},							// 1 false
@@ -27,12 +27,24 @@ public class ArrayTest {
             {1, 2, 3, 4, 3, 6},						//16 true   !!!!!!!!!!!!!!!
             {1, 2, 3, 4, 99, 5, 6},					//17 true   !!!!!!!!!!!!!!!
             {123, -17, -5, 1, 2, 3, 12, 43, 45},	//18 true
-            {3, 5, 67, 98, 3}                       //19 true
+            {3, 5, 67, 98, 3},                      //19 true
+    };
+
+    private int[][] arr1 = {    {0, 1, 1, 2},
+                                {0, 5, 0, 0},
+                                {2, 0, 3, 3}
+    };
+
+    private int[][] arr2 = {    {1, 1, 1, 0},
+                                {0, 5, 0, 1},
+                                {2, 1, 3, 10}
     };
 
     @Before
     public void setUp() {
         hw = new HelloWorld();
+        cs = new CodeSignal();
+
         //		int[] array01 = {1, 3, 2, 1};							// false
         //		int[] array02 = {1, 3, 2};								// true
         //		int[] array03 = {1, 2, 1, 2};							// false
@@ -55,97 +67,109 @@ public class ArrayTest {
     }
 
     @Test
+    public void testArrayNew01() {
+        assertEquals(1, cs.matrixElementsSum(arr1));
+    }
+
+    @Test
+    public void testArrayNew02() {
+        assertEquals(9, cs.matrixElementsSum(arr2));
+    }
+
+
+    /*
+    @Test
     public void testArray01() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[0]));
+        assertFalse(hw.almostIncreasingSequence3(array[0]));
     }
 
     @Test
     public void testArray02() {
-        assertTrue(hw.almostIncreasingSequenceWhile(array[1]));
+        assertTrue(hw.almostIncreasingSequence3(array[1]));
     }
 
     @Test
     public void testArray03() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[2]));
+        assertFalse(hw.almostIncreasingSequence3(array[2]));
     }
 
     @Test
     public void testArray04() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[3]));
+        assertFalse(hw.almostIncreasingSequence3(array[3]));
     }
 
     @Test
-    public void testArray05() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[4]));
-    }
+    public void testArray05() { assertFalse(hw.almostIncreasingSequence3(array[4])); }
 
     @Test
     public void testArray06() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[5]));
+        assertFalse(hw.almostIncreasingSequence3(array[5]));
     }
 
     @Test
     public void testArray07() {
-        assertTrue(hw.almostIncreasingSequenceWhile(array[6]));
+        assertTrue(hw.almostIncreasingSequence3(array[6]));
     }
 
     @Test
     public void testArray08() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[7]));
+        assertFalse(hw.almostIncreasingSequence3(array[7]));
     }
 
     @Test
     public void testArray09() {
-        assertTrue(hw.almostIncreasingSequenceWhile(array[8]));
+        assertTrue(hw.almostIncreasingSequence3(array[8]));
     }
 
     @Test
     public void testArray10() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[9]));
+        assertFalse(hw.almostIncreasingSequence3(array[9]));
     }
 
     @Test
     public void testArray11() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[10]));
+        assertFalse(hw.almostIncreasingSequence3(array[10]));
     }
 
     @Test
     public void testArray12() {
-        assertTrue(hw.almostIncreasingSequenceWhile(array[11]));
+        assertTrue(hw.almostIncreasingSequence3(array[11]));
     }
 
     @Test
     public void testArray13() {
-        assertTrue(hw.almostIncreasingSequenceWhile(array[12]));
+        assertTrue(hw.almostIncreasingSequence3(array[12]));
     }
 
     @Test
     public void testArray14() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[13]));
+        assertFalse(hw.almostIncreasingSequence3(array[13]));
     }
 
     @Test
     public void testArray15() {
-        assertFalse(hw.almostIncreasingSequenceWhile(array[14]));
+        assertFalse(hw.almostIncreasingSequence3(array[14]));
     }
 
     @Test
     public void testArray16() {
-        assertTrue(hw.almostIncreasingSequenceWhile(array[15]));
+        assertTrue(hw.almostIncreasingSequence3(array[15]));
     }
 
     @Test
     public void testArray17() {
-        assertTrue(hw.almostIncreasingSequenceWhile(array[16]));
+        assertTrue(hw.almostIncreasingSequence3(array[16]));
     }
 
     @Test
     public void testArray18() {
-        assertTrue(hw.almostIncreasingSequenceWhile(array[17]));
+        assertTrue(hw.almostIncreasingSequence3(array[17]));
     }
 
     @Test
     public void testArray19() {
-        assertTrue(hw.almostIncreasingSequenceWhile(array[18]));
+        assertTrue(hw.almostIncreasingSequence3(array[18]));
     }
+    */
+
 }

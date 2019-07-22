@@ -1,4 +1,5 @@
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -40,6 +41,9 @@ public class ArrayTest {
                                 {2, 1, 3, 10}
     };
 
+    private String[] stringArray = {"aba", "aa", "ad", "vcd", "aba"};
+    private String[] resultArray = {"aba", "vcd", "aba"};
+
     @Before
     public void setUp() {
         hw = new HelloWorld();
@@ -66,14 +70,21 @@ public class ArrayTest {
         //		int[] array19 = {3, 5, 67, 98, 3};						// true
     }
 
+    @Ignore
     @Test
     public void testArrayNew01() {
-        assertEquals(1, cs.matrixElementsSum(arr1));
+        assertEquals(9, cs.matrixElementsSum(arr1));
     }
 
+    @Ignore
     @Test
     public void testArrayNew02() {
         assertEquals(9, cs.matrixElementsSum(arr2));
+    }
+
+    @Test
+    public void testStringArray() {
+        assertArrayEquals(stringArray, cs.allLongestStrings(stringArray));
     }
 
 

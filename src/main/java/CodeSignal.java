@@ -103,6 +103,18 @@ public class CodeSignal {
         return resultArray;
     }
 
+    int max(int a, int b) {
+        int result = (a > b) ? a : b;
+        System.out.println("Max number is " + result);
+        return result;
+    }
+
+    int max2(int a, int b) {
+        return (a > b) ? a : b;
+    }
+
+
+
 
 
 }

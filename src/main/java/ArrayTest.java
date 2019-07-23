@@ -87,6 +87,18 @@ public class ArrayTest {
         assertArrayEquals(stringArray, cs.allLongestStrings(stringArray));
     }
 
+    @Test
+    public void testMax() {
+        assertEquals(14, cs.max(14, 6));
+
+        Person person = new Person("Bob", true);
+        System.out.println(person.getName());
+        System.out.println(person.isMarried());
+
+        Rectangle rect = new Rectangle(33, 33);
+        System.out.println(rect.isSquare());
+    }
+
 
     /*
     @Test

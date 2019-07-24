@@ -1,4 +1,7 @@
 import Color.*
+import java.io.BufferedReader
+import java.io.StringReader
+import java.lang.NumberFormatException
 import java.util.*
 
 class TestClass {
@@ -42,14 +45,41 @@ class TestClass {
         else -> "$i "
     }
 
+    fun readNumber(reader: BufferedReader): Int? {
+        try {
+            val line = reader.readLine()
+            return Integer.parseInt(line)
+        }
+        catch (e: NumberFormatException) {
+            return null
+        }
+        finally {
+            reader.close()
+        }
+    }
+
+    fun readNumber2(reader: BufferedReader) {
+        val number = try {
+            Integer.parseInt(reader.readLine())
+        } catch (e: NumberFormatException) {
+            return
+        }
+        println(number)
+    }
+
 
 }
 
 fun main(args: Array<String>) {
-//    val tc = TestClass()
+    val tc = TestClass()
 //    for (i in 1 until 10) {
 //        print(tc.fizzBuzz(i))
 //    }
+
+    val reader = BufferedReader(StringReader("not a num"))
+    //println(tc.readNumber(reader))
+    tc.readNumber2(reader)
+
 
     val binaryReps = TreeMap<Char, String>()
     for (c in 'A'..'F') {

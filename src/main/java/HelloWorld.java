@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class HelloWorld {
 
 	private static boolean almostIncreasingSequence(int[] sequence) {
@@ -362,81 +360,5 @@ public class HelloWorld {
 				{1, 3, 2, 1}
 		};
 
-
-		/*System.out.println("[1, 3, 2], odd position: " + 0 + ", odd value: " + getOddElement2(1, 3, 2));
-		System.out.println("[2, 1, 3], odd position: " + 0 + ", odd value: " + getOddElement2(2, 1, 3));
-		System.out.println("[2, 3, 1], odd position: " + 0 + ", odd value: " + getOddElement2(2, 3, 1));
-		System.out.println("[1, 1, 3], odd position: " + 0 + ", odd value: " + getOddElement2(1, 1, 3));
-		System.out.println("[1, 2, 2], odd position: " + 0 + ", odd value: " + getOddElement2(1, 2, 2));
-		System.out.println("[1, 2, 1], odd position: " + 0 + ", odd value: " + getOddElement2(1, 2, 1));
-		System.out.println("[2, 1, 2], odd position: " + 0 + ", odd value: " + getOddElement2(2, 1, 2));
-		System.out.println("[3, 1, 2], odd position: " + 0 + ", odd value: " + getOddElement2(3, 1, 2));
-		System.out.println("----------------------------------------");
-
-
-		int[] arr1 = {1, 3, 2};
-		int[] arr2 = {2, 1, 3};
-		int[] arr3 = {2, 3, 1};
-		int[] arr4 = {1, 1, 3};
-		int[] arr5 = {1, 2, 2};
-		int[] arr6 = {1, 2, 1};
-		int[] arr7 = {2, 1, 2};
-		int[] arr8 = {3, 1, 2};
-		System.out.println("[1, 3, 2], odd index in array: " + getOddElement(arr1));
-		System.out.println("[2, 1, 3], odd index in array: " + getOddElement(arr2));
-		System.out.println("[2, 3, 1], odd index in array: " + getOddElement(arr3));
-		System.out.println("[1, 1, 3], odd index in array: " + getOddElement(arr4));
-		System.out.println("[1, 2, 2], odd index in array: " + getOddElement(arr5));
-		System.out.println("[1, 2, 1], odd index in array: " + getOddElement(arr6));
-		System.out.println("[2, 1, 2], odd index in array: " + getOddElement(arr7));
-		System.out.println("[3, 1, 2], odd index in array: " + getOddElement(arr8));*/
-
-
-		/*System.out.println(almostIncreasingSequenceInt(intArray[0]));
-		System.out.println(almostIncreasingSequenceInt(intArray[1]));
-		System.out.println("-----------------");
-		System.out.println(almostIncreasingSequenceInt(intArray[2]));
-		System.out.println(almostIncreasingSequenceInt(intArray[3]));
-		System.out.println(almostIncreasingSequenceInt(intArray[4]));
-		System.out.println(almostIncreasingSequenceInt(intArray[5]));
-		System.out.println("-----------------");
-		System.out.println(almostIncreasingSequenceInt(intArray[6]));
-		System.out.println(almostIncreasingSequenceInt(intArray[7]));
-		System.out.println(almostIncreasingSequenceInt(intArray[8]));
-		System.out.println(almostIncreasingSequenceInt(intArray[9]));
-		System.out.println(almostIncreasingSequenceInt(intArray[10]));
-		System.out.println("-----------------");
-		System.out.println(almostIncreasingSequenceInt(intArray[11]));
-		System.out.println(almostIncreasingSequenceInt(intArray[12]));
-		System.out.println(almostIncreasingSequenceInt(intArray[13]));
-		System.out.println(almostIncreasingSequenceInt(intArray[14]));
-		System.out.println("-----------------");
-		System.out.println(almostIncreasingSequenceInt(intArray[15]));
-		System.out.println(almostIncreasingSequenceInt(intArray[16]));*/
-
-		/*System.out.println(almostIncreasingSequence3(intArray[0]));
-		System.out.println(almostIncreasingSequence3(intArray[1]));
-		System.out.println("-----------------");
-		System.out.println(almostIncreasingSequence3(intArray[2]));
-		System.out.println(almostIncreasingSequence3(intArray[3]));
-		System.out.println(almostIncreasingSequence3(intArray[4]));
-		System.out.println(almostIncreasingSequence3(intArray[5]));
-		System.out.println("-----------------");
-		System.out.println(almostIncreasingSequence3(intArray[6]));
-		System.out.println(almostIncreasingSequence3(intArray[7]));
-		System.out.println(almostIncreasingSequence3(intArray[8]));
-		System.out.println(almostIncreasingSequence3(intArray[9]));
-		System.out.println(almostIncreasingSequence3(intArray[10]));
-		System.out.println("-----------------");
-		System.out.println(almostIncreasingSequence3(intArray[11]));
-		System.out.println(almostIncreasingSequence3(intArray[12]));
-		System.out.println(almostIncreasingSequence3(intArray[13]));
-		System.out.println(almostIncreasingSequence3(intArray[14]));
-		System.out.println("-----------------");
-		System.out.println(almostIncreasingSequence3(intArray[15]));
-		System.out.println(almostIncreasingSequence3(intArray[16]));*/
-
-		//System.out.println(almostIncreasingSequence3(intArray[19]));
-		//System.out.println(almostIncreasingSequence3(intArray[20]));
 	}
 }

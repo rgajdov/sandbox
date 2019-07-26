@@ -1,4 +1,3 @@
-import Color.*
 import java.io.BufferedReader
 import java.io.StringReader
 import java.lang.NumberFormatException
@@ -67,6 +66,35 @@ class TestClass {
         println(number)
     }
 
+    fun setOfNums() {
+        val set = hashSetOf(1, 72, 53)
+        val list = arrayListOf(1, 7, 53)
+        val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
+        val strings = listOf("first", "second", "third")
+
+        println(joinToString(collection = list, separator = "; ", prefix = "(", postfix = ")"))
+        println(joinToString(list, ",", "", ""))
+        println(joinToString(list))
+        println(joinToString(list, postfix = ";", prefix = "# "))
+
+        println(strings.last())
+        println(set.max())
+
+        println(set.javaClass)
+        println(list.javaClass)
+        println(map.javaClass)
+    }
+
+    fun <T> joinToString(collection: Collection<T>, separator: String = ", ", prefix: String = "", postfix: String = ""): String {
+        val result = StringBuilder(prefix)
+        for ((index, element) in collection.withIndex()) {
+            if (index > 0) result.append(separator)
+            result.append(element)
+        }
+        result.append(postfix)
+        return result.toString()
+    }
+
 
 }
 
@@ -75,6 +103,8 @@ fun main(args: Array<String>) {
 //    for (i in 1 until 10) {
 //        print(tc.fizzBuzz(i))
 //    }
+
+    tc.setOfNums()
 
     val reader = BufferedReader(StringReader("not a num"))
     //println(tc.readNumber(reader))

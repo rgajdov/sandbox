@@ -360,5 +360,6 @@ public class HelloWorld {
 				{1, 3, 2, 1}
 		};
 
+		System.out.println(intArray.length);
 	}
 }

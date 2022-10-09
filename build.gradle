@@ -16,6 +16,9 @@ repositories {
 }
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'junit:junit:4.13.1'
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testImplementation('junit:junit:4.13')
 }
 compileKotlin {
     kotlinOptions {
@@ -27,4 +30,3 @@ compileTestKotlin {
         jvmTarget = "1.8"
     }
 }
-

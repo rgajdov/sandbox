@@ -370,5 +370,10 @@ public class HelloWorld {
 
 
 		System.out.println("This is only in branch-1!!!");
+
+		JobProcessing job = new JobImpl();
+		int j = job.processJob(1);
+
+		System.out.println("Job code: " + j);
 	}
 }
